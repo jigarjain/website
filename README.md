@@ -1,6 +1,6 @@
 # Website
 
-Source code for my personal site. Please visit [jigarjain.com](https://jigarjain.com) instead
+Source code of my personal blog.
 
 
 ## Development
