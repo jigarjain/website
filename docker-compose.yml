@@ -1,0 +1,11 @@
+jekyll:
+  image: jekyll/jekyll:4.0
+  environment:
+    BUNDLER_VERSION: 2.2.7
+  command: bash -c "gem install bundler:$${BUNDLER_VERSION}
+        && jekyll serve --livereload --drafts"
+  ports:
+    - 4000:4000
+    - 35729:35729
+  volumes:
+    - .:/srv/jekyll
