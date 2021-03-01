@@ -1,11 +1,11 @@
 # Permalinks/
-permalink:           blog/:title
+permalink:           pad/:title
 
 # Setup
 title:               Jigar Jain
 url:
 paginate:            3
-paginate_path:       /blog/page:num
+paginate_path:       /pad/page:num
 baseurl:             ""
 
 # Assets
