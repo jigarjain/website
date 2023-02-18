@@ -4,37 +4,9 @@
 // there are no more previous or next posts to show.
 
 .pagination {
-  overflow: hidden; // clearfix
-  margin: 0 -1.5rem 1rem;
-  color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
   font-size: 0.8rem;
-  text-align: center;
-}
-
-// Pagination items can be `span`s or `a`s
-.pagination-item {
-  display: block;
-  padding: 1rem;
-
-  &:first-child {
-    margin-bottom: -1px;
-  }
-}
-
-@media (min-width: 30em) {
-  .pagination {
-    margin: 3rem 0;
-  }
-
-  .pagination-item {
-    float: left;
-    width: 50%;
-
-    &:first-child {
-      margin-bottom: 0;
-    }
-    &:last-child {
-      margin-left: -1px;
-    }
-  }
+  color: var(--text-disabled);
 }

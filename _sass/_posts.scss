@@ -5,7 +5,7 @@
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   font-size: 0.9rem;
 
   li + li {
@@ -21,8 +21,8 @@
 .page-title,
 .post-title,
 .post-title a {
-  font-size: 1.1rem;
-  color: $brown;
+  font-size: 1.4rem;
+  color: var(--theme-color);
   text-decoration: none;
 }
 .page-title,
@@ -36,5 +36,11 @@
   margin-top: -.5rem;
   margin-bottom: 1rem;
   font-size: 0.8rem;
-  color: $gray-3;
+  color: var(--text-secondary);
+}
+
+.post-footer,  .page-footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--theme-color);
 }

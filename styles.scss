@@ -3,7 +3,6 @@
 # only main files contain this front matter, not partials.
 ---
 
-@import "variables";
 @import "base";
 @import "type";
 @import "syntax";
@@ -13,4 +12,3 @@
 @import "home";
 @import "posts";
 @import "pagination";
-@import "message";

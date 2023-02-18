@@ -3,7 +3,7 @@ permalink:           pad/:title
 
 # Setup
 title:               Jigar Jain
-url:
+url:                 https://jigarjain.com
 paginate:            3
 paginate_path:       /pad/page:num
 baseurl:             ""

@@ -12,10 +12,22 @@
   src: url("/assets/fonts/Title-Regular.woff2") format("woff2"),
 }
 
+:root {
+  --root-font-size: 16px;
+  --root-line-height: 1.5;
+  --background-color: #f7f7f7;
+  --text-color: #000;
+  --text-secondary: #767676;
+  --text-disabled: #ccc;
+  --theme-color: #594b3b;
+  --link-color: #594b3b;
+  --code-color: #bf616a;
+}
+
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -25,64 +37,18 @@ body {
 }
 
 html {
-  font-family: $root-font-family;
-  font-size: $root-font-size;
-  line-height: $root-line-height;
+  font-family: 'BodyLight', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--root-font-size);
+  line-height: var(--root-line-height);
 
-  @media (min-width: $large-breakpoint) {
-    font-size: $large-font-size;
+  @media (min-width:  38em) {
+    font-size: 20px;
   }
 }
 
 body {
-  color: $body-color;
-  background-color: $body-bg;
+  color: var(--text-color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
-// No `:visited` state is required by default (browsers will use `a`)
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
-  strong {
-    color: inherit;
-  }
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
-}
-
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  font-size: 85%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-
-th {
-  text-align: left;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  -ms-text-size-adjust: 100%;
 }
