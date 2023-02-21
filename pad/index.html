@@ -17,7 +17,7 @@ title: Blog
   {% endfor %}
 </div>
 
-<div class="pagination">
+<nav class="pagination">
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Show older">Older</a>
   {% else %}
@@ -28,4 +28,4 @@ title: Blog
   {% else %}
     <span>Newer</span>
   {% endif %}
-</div>
+</nav>
