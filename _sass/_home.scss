@@ -5,3 +5,16 @@
   justify-content: center;
   text-align: center;
 }
+
+.container404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
